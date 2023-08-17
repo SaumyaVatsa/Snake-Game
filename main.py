@@ -13,6 +13,11 @@ myScreen.bgcolor("black")
 myScreen.title("Snake Game")
 myScreen.tracer(0)
 
+myScreen.listen()
+myScreen.onkey(snake.turn_up, "Up")
+myScreen.onkey(snake.turn_down, "Down")
+myScreen.onkey(snake.turn_left, "Left")
+myScreen.onkey(snake.turn_right, "Right")
 
 game_is_on = True
 
